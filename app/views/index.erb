@@ -1,0 +1,9 @@
+<h2> List of Puppies: </h2>
+
+<ul>
+<% @puppies.each do |puppy| %>
+    <a href="/index/<%= puppy.id %>">
+        <li> <%= puppy.name %> - <%= puppy.breed %> </li>
+   </a>
+<% end %>
+</ul>
